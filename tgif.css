@@ -1,0 +1,64 @@
+body {
+    font-family: Noteworthy;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+nav {
+    margin-bottom: 15px;
+}
+#more {display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.rmb {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.center {
+    text-align: center;
+}
+.border {
+    border: solid;
+    border-color: grey;
+}
+.homeimg {
+    height: 225px;
+    float: right;
+}
+header li {
+    list-style-image: url(./img/email.png);
+}
+.flexR {
+    display: flex;
+    justify-content: space-between;
+}
+.flexC {
+    display: flex;
+    flex-direction: column;
+}
+.wide {
+    width: 50%;
+}
+.marginR {
+    margin-right: 25px;
+}
+.marginL {
+    margin-left: 25px;
+}
+.table {
+    margin-top: 20px;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

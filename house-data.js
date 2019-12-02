@@ -1,6 +1,33 @@
 //House Data table
 
-var members = data.results[0].members;
+var members;
+
+fetch("https://api.propublica.org/congress/v1/113/house/members.json", {
+
+method: "GET",
+headers: {
+        "X-API-KEY": "aklwowxCPxdIhQtbYKU9CtttKlvUrWgbERU6Gbdd"
+    }
+}).then(function (response) {
+
+    if(response.ok) {
+
+        return response.json();
+    }
+
+    throw new Error (response.statusText);
+}).then (function (json) {
+
+    members = json.results[0].members;
+
+    loader();
+    table(members);
+    fillDropDown();
+
+}).catch(function (error) {
+    
+    console.log("Request failed: " + error.message);
+});
 
 function table(membersArray){
 
@@ -53,8 +80,6 @@ function table(membersArray){
     }
 }
 
-table(members);
-
 //Filtres
 
 var dCheckbox = document.getElementById("demFilt");
@@ -105,7 +130,6 @@ function fillDropDown (){
     }
 
 }
-fillDropDown();
 
 //Funció que unifica els dos filtres (Party+State)
 
@@ -131,4 +155,9 @@ function bothFilters(){
     }
     table(filter);
 }
-bothFilters();
+
+//Loader
+
+function loader() {
+    document.getElementById("loader").style.display = 'none';
+}

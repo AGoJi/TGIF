@@ -1,3 +1,32 @@
+var members;
+
+fetch("https://api.propublica.org/congress/v1/113/senate/members.json", {
+
+method: "GET",
+headers: {
+        "X-API-KEY": "aklwowxCPxdIhQtbYKU9CtttKlvUrWgbERU6Gbdd"
+    }
+}).then(function (response) {
+
+    if(response.ok) {
+
+        return response.json();
+    }
+
+    throw new Error (response.statusText);
+}).then (function (json) {
+
+    members = json.results[0].members;
+
+    loader();
+    senGlance(members);
+    senAtt(members);
+
+}).catch(function (error) {
+    
+    console.log("Request failed: " + error.message);
+});
+
 var statistics = 
 {
     "Democrats":
@@ -26,8 +55,6 @@ var statistics =
 }
 
 //SENATE AT A GLANCE TABLE
-
-var members = data.results[0].members;
 
 function senGlance(){
 
@@ -101,8 +128,6 @@ var votesWPI =0;
     }
 
 }
-
-senGlance ();
 
 //SENATE ATTENDANCE TABLES
 
@@ -202,4 +227,8 @@ function senAtt (){
     
 }
 
-senAtt ();
+//Loader
+
+function loader() {
+    document.getElementById("loader").style.display = 'none';
+}

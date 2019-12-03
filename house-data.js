@@ -159,5 +159,5 @@ function bothFilters(){
 //Loader
 
 function loader() {
-    document.getElementById("loader").style.display = 'none';
+    document.getElementById("loader").style.display = "none";
 }

@@ -39,13 +39,15 @@ function table(membersArray){
     var votes = "";
 
     var senateData = document.getElementById("senate-data");
-
     senateData.innerHTML = "";
 
+    var alertMessage = document.getElementById("alertMessage");
+    alertMessage.innerHTML = "";
+
     if(membersArray.length==0){
-       var message = document.createElement("td");
+       var message = document.createElement("p");
         message.innerHTML = "SORRY, WE COULDN'T FIND ANY RESULTS MATCHING.";
-        senateData.append(message);
+        alertMessage.append(message);
 
     }else{
         for(var i=0; i<membersArray.length; i++){

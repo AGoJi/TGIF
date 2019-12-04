@@ -69,9 +69,15 @@
       <div class="filter">
         <div>
           <p>Filter by Party:</p>
-          <input type="checkbox" name="party" value="democrats" id="demFilt"> Democrats
-          <input type="checkbox" name="party" value="republicans" id="repFilt"> Republicans
-          <input type="checkbox" name="party" value="independents" id="indFilt"> Independents
+          <label>
+            <input type="checkbox" name="party" value="democrats" id="demFilt"> Democrats
+          </label>
+          <label>
+            <input type="checkbox" name="party" value="republicans" id="repFilt"> Republicans
+          </label>
+          <label>
+            <input type="checkbox" name="party" value="independents" id="indFilt"> Independents
+          </label>
         </div>
 
         <div>
@@ -95,6 +101,11 @@
         <tbody id="senate-data">
         </tbody>
       </table>
+    </div>
+
+    <div class="flexM">
+      <div id="alertMessage" class="alertMessage">
+      </div>
     </div>
 
     <footer>

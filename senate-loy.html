@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./tgif.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./tgif.css" />
 
     <title>TGIF Senate Loyalty Page</title>
   </head>
-  
-  <body>
 
+  <body>
     <div class="loader" id="loader">
-        <img src="./img/infinityloader.gif" alt="Loading..."/>
+      <img src="./img/infinityloader.gif" alt="Loading..." />
     </div>
 
-    <header>            
-      <a href="./index.html"><img alt="TGIF Logo" src="./img/logo.png"></a>
+    <header>
+      <a href="./index.html"><img alt="TGIF Logo" src="./img/logo.png"/></a>
       <ul>
         <li>
           <a class="mail" href="mailto:info@tgif.net">info@tgif.net</a>
@@ -32,7 +39,14 @@
             <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Congress 113
             </a>
             <div class="dropdown-menu">
@@ -41,7 +55,14 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Attendance
             </a>
             <div class="dropdown-menu">
@@ -50,7 +71,14 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Loyalty
             </a>
             <div class="dropdown-menu">
@@ -60,15 +88,20 @@
           </li>
         </ul>
       </div>
-    </nav>   
+    </nav>
 
     <div>
       <div class="flexR">
         <div class="flexC wide marginR">
           <h2>Party Loyalty</h2>
-          <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.</p>
+          <p>
+            Those who consider themselves to be strong partisans, strong
+            Democrats and strong Republicans respectively, tend to be the most
+            faithful in voting for their party's nominee for office and
+            legislation that backs their party's agenda.
+          </p>
         </div>
-      
+
         <div class="wide marginL">
           <h2>Senate at a glance</h2>
           <table class="table">
@@ -79,8 +112,7 @@
                 <th>% Voted with Prty</th>
               </tr>
             </thead>
-            <tbody id="SenAtGla">
-            </tbody>
+            <tbody id="glance"></tbody>
           </table>
         </div>
       </div>
@@ -96,8 +128,7 @@
                 <th>% Party Votes</th>
               </tr>
             </thead>
-            <tbody id="bottSenLoy">
-            </tbody>
+            <tbody id="bottLoy"></tbody>
           </table>
         </div>
 
@@ -111,22 +142,34 @@
                 <th>% Party Votes</th>
               </tr>
             </thead>
-            <tbody id="topSenLoy">
-            </tbody>
+            <tbody id="topLoy"></tbody>
           </table>
         </div>
       </div>
-    </div>  
+    </div>
 
     <footer>
-      <p class="card card-header center border">© 2016 TGIF | All Rights Reserved</p>
-    </footer>  
+      <p class="card card-header center border">
+        © 2016 TGIF | All Rights Reserved
+      </p>
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="./statisticsSenateLoy.js"></script>
-
+    <script src="./houSenLoy.js"></script>
   </body>
 </html>
